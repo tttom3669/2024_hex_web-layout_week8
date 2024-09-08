@@ -1801,7 +1801,8 @@ $offcanvas-bg-color: var(--#{$prefix}body-bg) !default;
 $offcanvas-color: var(--#{$prefix}body-color) !default;
 $offcanvas-box-shadow: $modal-content-box-shadow-xs !default;
 $offcanvas-backdrop-bg: $modal-backdrop-bg !default;
-$offcanvas-backdrop-opacity: $modal-backdrop-opacity !default;
+// $offcanvas-backdrop-opacity: $modal-backdrop-opacity !default;
+$offcanvas-backdrop-opacity: 0 !default;
 // scss-docs-end offcanvas-variables
 
 // Code

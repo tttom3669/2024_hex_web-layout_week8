@@ -49,7 +49,7 @@ $position-values: map-merge($position-values, $spacers);
 // @import "popover";
 // @import "carousel";
 // @import "spinners";
-// @import "offcanvas";
+@import 'bootstrap/scss/offcanvas';
 // @import "placeholders";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`

@@ -2,6 +2,12 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  .container {
+    @include media-breakpoint-down(xl) {
+      position: relative;
+      z-index: 1050;
+    }
+  }
   &__logo {
     width: 125px;
     height: 20px;
@@ -50,6 +56,11 @@
     left: 50%;
     height: 600px;
     transform: translateX(-50%);
+  }
+  &__dropdown-menu,
+  .offcanvas-mobile {
+    height: calc(100dvh - 64px);
+    top: 64px;
     .nav-container {
       height: 100%;
       overflow-y: auto;
