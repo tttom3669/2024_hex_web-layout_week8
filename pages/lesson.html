@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main>
+      <section class="py-10 py-md-20 bg-neutral-10 position-relative overflow-hidden">
+        <div class="container position-relative z-10">
+          <div class="position-relative z-10">
+            <div class="d-flex align-items-center gap-3 text-neutral-80 mb-10 mb-md-4">
+              <p>所有課程</p>
+              <span class="text-neutral-60">/</span>
+              <p>程式課程</p>
+            </div>
+            <h2 class="fs-h3 fs-md-h1 mb-10">程式課程</h2>
+            <div class="d-flex gap-4">
+              <ul class="list-unstyled d-flex gap-2 lesson__link-container flex-fill">
+                <li class="flex-grow-0 flex-shrink-0"><button type="button"
+                    class="btn btn-primary-100 text-white px-4 py-3">所有程式</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">網頁開發</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">資料科學</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">行動版開發</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">程式語言</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">遊戲開發</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">資料庫設計與開發</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">軟體測試</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">軟體開發工具</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">無程式碼開發</button></li>
+                <li class="flex-grow-0 flex-shrink-0"> <button type="button"
+                    class="btn btn-white border px-4 py-3 border-neutral-40 text-neutral-80">無程式碼開發</button></li>
+              </ul>
+              <button type="button" class="p-4 d-none d-md-block">
+                <span class="material-symbols-outlined">
+                  chevron_right
+                </span>
+              </button>
+            </div>
+          </div>
+          <img class="lesson__link-bg--1"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/polygon-2.png?raw=true"
+            alt="polygon-2">
+          <img class="lesson__link-bg--2"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/deco/polygon-2.png?raw=true"
+            alt="polygon-2">
+        </div>
+        <svg class="position-absolute start-0 top-0 z-0 d-none d-md-block" xmlns="http://www.w3.org/2000/svg"
+          width="512" height="370" viewBox="0 0 512 370" fill="none">
+          <path
+            d="M92 -95C14.6802 -95 -48 -32.3198 -48 45C-48 122.321 14.6802 185 92 185C14.6802 185 -48 247.679 -48 325C-48 402.321 14.6802 465 92 465C169.321 465 232 402.321 232 325C232 402.321 294.679 465 372 465C449.321 465 512 402.321 512 325C512 247.679 449.321 185 372 185C449.321 185 512 122.321 512 45C512 -32.3198 449.321 -95 372 -95C294.679 -95 232 -32.3198 232 45C232 -32.3198 169.321 -95 92 -95Z"
+            fill="#E6F4FF" />
+        </svg>
+        <svg class="position-absolute end-0 bottom-0 z-0 d-none d-md-block" xmlns="http://www.w3.org/2000/svg"
+          width="560" height="270" viewBox="0 0 560 270" fill="none">
+          <path
+            d="M140 0C62.6802 0 0 62.6802 0 140C0 217.321 62.6802 280 140 280C62.6802 280 0 342.679 0 420C0 497.321 62.6802 560 140 560C217.321 560 280 497.321 280 420C280 497.321 342.679 560 420 560C497.321 560 560 497.321 560 420C560 342.679 497.321 280 420 280C497.321 280 560 217.321 560 140C560 62.6802 497.321 0 420 0C342.679 0 280 62.6802 280 140C280 62.6802 217.321 0 140 0Z"
+            fill="#E6F4FF" />
+        </svg>
+        <svg class="position-absolute end-0 bottom-0 z-0 h-100 d-block d-md-none" xmlns="http://www.w3.org/2000/svg"
+          width="175" height="240" viewBox="0 0 175 240" fill="none">
+          <path
+            d="M60 0C26.8629 0 0 26.8629 0 60C0 93.1376 26.8629 120 60 120C26.8629 120 0 146.862 0 180C0 213.138 26.8629 240 60 240C93.1376 240 120 213.138 120 180C120 213.138 146.862 240 180 240C213.138 240 240 213.138 240 180C240 146.862 213.138 120 180 120C213.138 120 240 93.1376 240 60C240 26.8629 213.138 0 180 0C146.862 0 120 26.8629 120 60C120 26.8629 93.1376 0 60 0Z"
+            fill="#E6F4FF" />
+        </svg>
+      </section>
+
+      <section class="pt-10">
+        <div class="container">
+          <div class="px-2 border-bottom border-neutral-40 mb-10 mb-md-20">
+            <ul class="nav list-unstyled course-nav gap-8">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">最熱門</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">最新課程</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">話題最高</a>
+              </li>
+            </ul>
+          </div>
+          <div class="position-relative swiper-container  swiper-hot-course-container">
+            <div class="swiper swiper-hot-course pb-10 pb-md-20">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <div class="rounded-20px shadow-c3 bg-white">
+                      <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+                        class="card-img-top" alt="course-5">
+                      <div class="card-body rounded-bottom-20px">
+                        <div class="p-4">
+                          <h5 class="fs-h6 card-title mb-4">小白也會！從零開始學習 Python 程式設計</h5>
+                          <div class="d-flex align-items-center justify-content-between gap-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                                alt="avatar-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                              <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                              <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                          <div class="d-flex align-items-start gap-1 flex-column">
+                            <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                            <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                                fill="#F6BD2B" />
+                            </svg>
+                            <p class="text-gray-2">4.0</p>
+                            <p class="text-gray-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="position-absolute top-4 start-4 px-3 py-2 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+                      限時 8
+                      折 🔥</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <div class="rounded-20px shadow-c3 bg-white">
+                      <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-6.png?raw=true"
+                        class="card-img-top" alt="course-6">
+                      <div class="card-body rounded-bottom-20px">
+                        <div class="p-4">
+                          <h5 class="fs-h6 card-title mb-4">全面掌握 JavaScript 開發技術</h5>
+                          <div class="d-flex align-items-center justify-content-between gap-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                                alt="avatar-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                              <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                              <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                          <div class="d-flex align-items-start gap-1 flex-column">
+                            <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                            <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                                fill="#F6BD2B" />
+                            </svg>
+                            <p class="text-gray-2">4.0</p>
+                            <p class="text-gray-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="position-absolute top-4 start-4 px-3 py-2 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+                      限時 8
+                      折 🔥</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <div class="rounded-20px shadow-c3 bg-white">
+                      <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-7.png?raw=true"
+                        class="card-img-top" alt="course-7">
+                      <div class="card-body rounded-bottom-20px">
+                        <div class="p-4">
+                          <h5 class="fs-h6 card-title mb-4">HTML & CSS 網頁設計基礎教程</h5>
+                          <div class="d-flex align-items-center justify-content-between gap-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                                alt="avatar-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                              <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                              <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                          <div class="d-flex align-items-start gap-1 flex-column">
+                            <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                            <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                                fill="#F6BD2B" />
+                            </svg>
+                            <p class="text-gray-2">4.0</p>
+                            <p class="text-gray-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <div class="rounded-20px shadow-c3 bg-white">
+                      <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-8.png?raw=true"
+                        class="card-img-top" alt="course-8">
+                      <div class="card-body rounded-bottom-20px">
+                        <div class="p-4">
+                          <h5 class="fs-h6 card-title mb-4">HTML & CSS 網頁設計基礎教程</h5>
+                          <div class="d-flex align-items-center justify-content-between gap-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                                alt="avatar-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                              <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                              <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                          <div class="d-flex align-items-start gap-1 flex-column">
+                            <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                            <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                                fill="#F6BD2B" />
+                            </svg>
+                            <p class="text-gray-2">4.0</p>
+                            <p class="text-gray-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <div class="rounded-20px shadow-c3 bg-white">
+                      <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-4.png?raw=true"
+                        class="card-img-top" alt="course-4">
+                      <div class="card-body rounded-bottom-20px">
+                        <div class="p-4">
+                          <h5 class="fs-h6 card-title mb-4">創意寫作工坊：從靈感到出版的全過程</h5>
+                          <div class="d-flex align-items-center justify-content-between gap-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                                alt="avatar-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-end">
+                              <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                              <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                          <div class="d-flex align-items-start gap-1 flex-column">
+                            <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">中文創作</a>
+                            <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                                fill="#F6BD2B" />
+                            </svg>
+                            <p class="text-gray-2">4.0</p>
+                            <p class="text-gray-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="position-absolute top-4 start-4 px-3 py-2 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+                      限時 8
+                      折 🔥</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-hot-course__btn-next d-none d-md-block"></div>
+            <div class="swiper-button-prev  swiper-hot-course__btn-prev d-none d-md-block"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10 mb-md-20">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-10">
+            <h2 class="fs-h6 fs-md-h3">熱門主題</h2>
+            <div class="d-flex">
+              <div class="swiper-button-prev swiper-popular-theme__btn-prev"></div>
+              <div class="swiper-button-next swiper-popular-theme__btn-next"></div>
+            </div>
+          </div>
+          <div class="swiper swiper-popular-theme pb-md-12">
+            <div class="swiper-wrapper">
+              <% for(let i=0; i < 3; i++) {%>
+                <div class="swiper-slide">
+                  <div class="text-center border rounded-24px py-6 border-neutral-40">
+                    <h3 class="fs-h6 mb-2">HTML 5</h3>
+                    <p class="text-neutral-80">2,103 個課程</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text-center border rounded-24px py-6 border-neutral-40">
+                    <h3 class="fs-h6 mb-2">Javascript</h3>
+                    <p class="text-neutral-80">891 個課程</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text-center border rounded-24px py-6 border-neutral-40">
+                    <h3 class="fs-h6 mb-2">Python</h3>
+                    <p class="text-neutral-80">1,384 個課程</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text-center border rounded-24px py-6 border-neutral-40">
+                    <h3 class="fs-h6 mb-2">CSS 3</h3>
+                    <p class="text-neutral-80">240 個課程</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text-center border rounded-24px py-6 border-neutral-40">
+                    <h3 class="fs-h6 mb-2">HTML 5</h3>
+                    <p class="text-neutral-80">2,103 個課程</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="text-center border rounded-24px py-6 border-neutral-40">
+                    <h3 class="fs-h6 mb-2">HTML 5</h3>
+                    <p class="text-neutral-80">2,103 個課程</p>
+                  </div>
+                </div>
+                <% } %>
+            </div>
+            <div class="swiper-pagination d-none d-md-block"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-neutral-10 py-10 py-md-20 px-3 px-md-0">
+        <div class="container">
+          <h2 class="h5 fs-md-h2 mb-10 text-center">程式頂尖講師</h2>
+          <div class="row row-gap-6">
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-neutral-40 rounded-12px">
+                <img class="rounded-top-12px img-fluid object-fit-cover w-100"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/teacher-4.png?raw=true"
+                  class="card-img-top" alt="teacher-4">
+                <div class="card-body rounded-bottom-12px">
+                  <div class="p-4 text-center  border border-neutral-40  border-bottom border-neutral-40 ">
+                    <h3 class="card-title fs-base text-neutral-80 mb-1">Devon Lane</h3>
+                    <p class="card-text fs-sm text-neutral-80">自由接案工程師</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-4">
+                    <p class="text-neutral-80 fs-sm">3,394 個學生</p>
+                    <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                          fill="#F6BD2B" />
+                      </svg>
+                      <p class="text-gray-2">4.0</p>
+                      <p class="text-gray-1">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-neutral-40 rounded-12px">
+                <img class="rounded-top-12px img-fluid object-fit-cover w-100"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/teacher-5.png?raw=true"
+                  class="card-img-top" alt="teacher-5">
+                <div class="card-body rounded-bottom-12px">
+                  <div class="p-4 text-center  border border-neutral-40  border-bottom border-neutral-40 ">
+                    <h3 class="card-title fs-base text-neutral-80 mb-1">Jenny Cooper</h3>
+                    <p class="card-text fs-sm text-neutral-80">資深全端工程師</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-4">
+                    <p class="text-neutral-80 fs-sm">3,394 個學生</p>
+                    <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                          fill="#F6BD2B" />
+                      </svg>
+                      <p class="text-gray-2">4.0</p>
+                      <p class="text-gray-1">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-neutral-40 rounded-12px">
+                <img class="rounded-top-12px img-fluid object-fit-cover w-100"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/teacher-6.png?raw=true"
+                  class="card-img-top" alt="teacher-6">
+                <div class="card-body rounded-bottom-12px">
+                  <div class="p-4 text-center  border border-neutral-40  border-bottom border-neutral-40 ">
+                    <h3 class="card-title fs-base text-neutral-80 mb-1">Johnny Khan</h3>
+                    <p class="card-text fs-sm text-neutral-80">矽谷軟體工程師</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-4">
+                    <p class="text-neutral-80 fs-sm">3,394 個學生</p>
+                    <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                          fill="#F6BD2B" />
+                      </svg>
+                      <p class="text-gray-2">4.0</p>
+                      <p class="text-gray-1">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card border border-neutral-40 rounded-12px">
+                <img class="rounded-top-12px img-fluid object-fit-cover w-100"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/teacher-7.png?raw=true"
+                  class="card-img-top" alt="teacher-7">
+                <div class="card-body rounded-bottom-12px">
+                  <div class="p-4 text-center  border border-neutral-40  border-bottom border-neutral-40 ">
+                    <h3 class="card-title fs-base text-neutral-80 mb-1">Annie Lin</h3>
+                    <p class="card-text fs-sm text-neutral-80">資深前端工程師</p>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between p-4">
+                    <p class="text-neutral-80 fs-sm">3,394 個學生</p>
+                    <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                          fill="#F6BD2B" />
+                      </svg>
+                      <p class="text-gray-2">4.0</p>
+                      <p class="text-gray-1">(333)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-20 pt-10 py-md-20">
+        <div class="container">
+          <div class="d-flex flex-column gap-3 align-items-center justify-content-between mb-10 flex-md-row gap-md-0">
+            <h2 class="text-black fs-base fs-md-h3">
+              <span>查看 520 筆與「</span>
+              <span class="text-primary-100">程式開發</span>
+              <span>」的相關課程</span>
+            </h2>
+            <ul class="nav related-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">最新課程</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">最高人氣</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">最低價格</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row row-gap-6 d-none d-md-flex mb-10">
+            <% for(let i=0; i < 6; i++) {%>
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card position-relative">
+                  <div class="rounded-20px shadow-c3 bg-white">
+                    <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+                      class="card-img-top" alt="course-5">
+                    <div class="card-body rounded-bottom-20px">
+                      <div class="p-4">
+                        <h5 class="fs-h6 card-title mb-4">小白也會！從零開始學習 Python 程式設計</h5>
+                        <div class="d-flex align-items-center justify-content-between gap-6">
+                          <div class="d-flex align-items-center gap-2">
+                            <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                              alt="avatar-1">
+                            <p class="text-neutral-80">Kelly Hsu</p>
+                          </div>
+                          <div class="d-flex flex-column align-items-end">
+                            <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                            <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                        <div class="d-flex align-items-start gap-1 flex-column">
+                          <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                          <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                              fill="#F6BD2B" />
+                          </svg>
+                          <p class="text-gray-2">4.0</p>
+                          <p class="text-gray-1">(333)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="position-absolute top-4 start-4 px-3 py-2 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+                    限時 8
+                    折 🔥</div>
+                </div>
+              </div>
+              <div class="col-md-6  col-lg-4 col-xl-3">
+                <div class="card position-relative">
+                  <div class="rounded-20px shadow-c3 bg-white">
+                    <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-6.png?raw=true"
+                      class="card-img-top" alt="course-6">
+                    <div class="card-body rounded-bottom-20px">
+                      <div class="p-4">
+                        <h5 class="fs-h6 card-title mb-4">全面掌握 JavaScript 開發技術</h5>
+                        <div class="d-flex align-items-center justify-content-between gap-6">
+                          <div class="d-flex align-items-center gap-2">
+                            <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                              alt="avatar-1">
+                            <p class="text-neutral-80">Kelly Hsu</p>
+                          </div>
+                          <div class="d-flex flex-column align-items-end">
+                            <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                            <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                        <div class="d-flex align-items-start gap-1 flex-column">
+                          <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                          <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                              fill="#F6BD2B" />
+                          </svg>
+                          <p class="text-gray-2">4.0</p>
+                          <p class="text-gray-1">(333)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="position-absolute top-4 start-4 px-3 py-2 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+                    限時 8
+                    折 🔥</div>
+                </div>
+              </div>
+              <div class="col-md-6  col-lg-4 col-xl-3">
+                <div class="card position-relative">
+                  <div class="rounded-20px shadow-c3 bg-white">
+                    <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-7.png?raw=true"
+                      class="card-img-top" alt="course-7">
+                    <div class="card-body rounded-bottom-20px">
+                      <div class="p-4">
+                        <h5 class="fs-h6 card-title mb-4">HTML & CSS 網頁設計基礎教程</h5>
+                        <div class="d-flex align-items-center justify-content-between gap-6">
+                          <div class="d-flex align-items-center gap-2">
+                            <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                              alt="avatar-1">
+                            <p class="text-neutral-80">Kelly Hsu</p>
+                          </div>
+                          <div class="d-flex flex-column align-items-end">
+                            <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                            <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                        <div class="d-flex align-items-start gap-1 flex-column">
+                          <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                          <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                              fill="#F6BD2B" />
+                          </svg>
+                          <p class="text-gray-2">4.0</p>
+                          <p class="text-gray-1">(333)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6  col-lg-4 col-xl-3">
+                <div class="card position-relative">
+                  <div class="rounded-20px shadow-c3 bg-white">
+                    <img class="img-fluid rounded-top-20px w-100 object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-8.png?raw=true"
+                      class="card-img-top" alt="course-8">
+                    <div class="card-body rounded-bottom-20px">
+                      <div class="p-4">
+                        <h5 class="fs-h6 card-title mb-4">HTML & CSS 網頁設計基礎教程</h5>
+                        <div class="d-flex align-items-center justify-content-between gap-6">
+                          <div class="d-flex align-items-center gap-2">
+                            <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                              alt="avatar-1">
+                            <p class="text-neutral-80">Kelly Hsu</p>
+                          </div>
+                          <div class="d-flex flex-column align-items-end">
+                            <p class="fw-bold text-primary-100 fs-h6 ">NT$ 2,480</p>
+                            <p class="text-gray-1 text-decoration-line-through">NT$ 3,200</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-4 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                        <div class="d-flex align-items-start gap-1 flex-column">
+                          <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                          <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                              fill="#F6BD2B" />
+                          </svg>
+                          <p class="text-gray-2">4.0</p>
+                          <p class="text-gray-1">(333)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% }%>
+          </div>
+          <div class="row row-gap-6 d-flex d-md-none bg-white mb-10">
+            <% for(let i=0; i < 20; i++) {%>
+              <div class="col-12">
+                <div class="card position-relative">
+                  <div class="d-flex align-items-start gap-2 bg-white pb-6 border-bottom border-neutral-40">
+                    <img class="img-fluid rounded-12px object-fit-cover" style="width: 100px; aspect-ratio: 1 / 1;"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+                      class="card-img-top" alt="course-5">
+                    <div class="card-body flex-fill">
+                      <div class="pb-2">
+                        <h5 class="fs-base card-title mb-4">小白也會！從零開始學習 Python 程式設計</h5>
+                        <div class="d-flex align-items-center justify-content-between gap-6">
+                          <div class="d-flex align-items-center gap-2">
+                            <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                              alt="avatar-1">
+                            <p class="text-neutral-80">Kelly Hsu</p>
+                          </div>
+                          <div class="d-flex flex-column align-items-end">
+                            <p class="fw-bold text-primary-100 fs-base ">NT$ 2,480</p>
+                            <p class="text-gray-1 text-decoration-line-through fs-sm">NT$ 3,200</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="py-2 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                        <div class="d-flex align-items-start gap-1 flex-column">
+                          <a href="#" class="fs-sm py-1 px-3 text-neutral-80 rounded-100px bg-neutral-40">程式開發</a>
+                          <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                              fill="#F6BD2B" />
+                          </svg>
+                          <p class="text-gray-2">4.0</p>
+                          <p class="text-gray-1">(333)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <% if(i===0){%>
+                    <div
+                      class="position-absolute top-1 start-1 px-2 py-1 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+                      8
+                      折 </div>
+                    <% }%>
+                </div>
+              </div>
+              <% }%>
+          </div>
+          <nav>
+            <ul class="pagination flex-wrap justify-content-center justify-content-md-end gap-2">
+              <li class="page-item">
+                <a class="page-link  disabled" href="#" aria-label="Previous">
+                  <span class="material-symbols-outlined fs-h6">
+                    keyboard_double_arrow_left
+                  </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link  disabled" href="#" aria-label="Previous">
+                  <span class="material-symbols-outlined fs-h6 ">
+                    chevron_left
+                  </span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span class="material-symbols-outlined fs-h6">
+                    chevron_right
+                  </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span class="material-symbols-outlined fs-h6">
+                    keyboard_double_arrow_right
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="py-10 py-md-30 position-relative overflow-hidden">
+        <%- include('./layout/category'); -%>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+      <script type="module" src="../assets/js/lesson.js"></script>
+</body>
+
+</html>

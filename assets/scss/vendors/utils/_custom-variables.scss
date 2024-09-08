@@ -1,0 +1,172 @@
+// ============ colors ============
+
+$primary-120: #003bb7 !default;
+$primary-100: #0068ff !default;
+$primary-80: #3f95ff !default;
+$primary-60: #66b1ff !default;
+$primary-40: #99cfff !default;
+$primary-10: #e5f4ff !default;
+
+$success-120: #48970f !default;
+$success-100: #7cd31f !default;
+$success-20: #ddfaa5 !default;
+$success-10: #f0fcd1 !default;
+
+$info-120: #1566b5 !default;
+$info-100: #2aaffc !default;
+$info-20: #a9effe !default;
+$info-10: #d4f9fe !default;
+
+$alert-120: #b71d4f !default;
+$alert-100: #ff3a55 !default;
+$alert-20: #ffbbb0 !default;
+$alert-10: #ffe0d7 !default;
+
+$white: #fff !default;
+$black: #000 !default;
+
+$neutral-80: #4b4b4b !default;
+$neutral-60: #909090 !default;
+$neutral-40: #ececec !default;
+$neutral-10: #f9f9f9 !default;
+
+$gray-1: #808080 !default;
+$gray-2: #180000 !default;
+$gray-3: #1d2026 !default;
+$gray-4: #6e7485 !default;
+$gray-5: #282828 !default;
+$gray-6: #d4d4d4 !default;
+
+$custom-colors: (
+  'primary-120': $primary-120,
+  'primary-100': $primary-100,
+  'primary-80': $primary-80,
+  'primary-60': $primary-60,
+  'primary-40': $primary-40,
+  'primary-10': $primary-10,
+  'success-120': $success-120,
+  'success-100': $success-100,
+  'success-20': $success-20,
+  'success-10': $success-10,
+  'info-120': $info-120,
+  'info-100': $info-100,
+  'info-20': $info-20,
+  'info-10': $info-10,
+  'alert-120': $alert-120,
+  'alert-100': $alert-100,
+  'alert-20': $alert-20,
+  'alert-10': $alert-10,
+  'white': $white,
+  'black': $black,
+  'neutral-80': $neutral-80,
+  'neutral-60': $neutral-60,
+  'neutral-40': $neutral-40,
+  'neutral-10': $neutral-10,
+  'gray-1': $gray-1,
+  'gray-2': $gray-2,
+  'gray-3': $gray-3,
+  'gray-4': $gray-4,
+  'gray-5': $gray-5,
+  'gray-6': $gray-6,
+  'transparent': transparent,
+) !default;
+
+// ============ #colors ============
+
+// ============ Typography ============
+
+// ------ font-size ------
+$font-size-base: 1rem !default;
+
+$font-sizes: (
+  h1: $font-size-base * 3,
+  // 48px
+  h2: $font-size-base * 2.5,
+  // 40px
+  h3: $font-size-base * 2,
+  // 32px
+  h4: $font-size-base * 1.75,
+  // 28px
+  h5: $font-size-base * 1.5,
+  // 24px
+  h6: $font-size-base * 1.25,
+  // 20px
+  base: $font-size-base,
+  // 16px
+  sm: $font-size-base * 0.875,
+  // 14px
+  xs: $font-size-base * 0.75,
+  //  12px
+  11: $font-size-base * 2.75,
+  //  44px
+) !default;
+// ------ #font-size ------
+
+// ============ Spacing ============
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  // 4px
+  1\.5: $spacer * 0.375,
+  // 6px
+  2: $spacer * 0.5,
+  // 8px
+  2\.5: $spacer * 0.625,
+  // 10px
+  3: $spacer * 0.75,
+  // 12px
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  // 20px
+  6: $spacer * 1.5,
+  // 24px
+  7\.5: $spacer * 1.875,
+  // 30px
+  8: $spacer * 2,
+  // 32px
+  9: $spacer * 2.25,
+  // 36px
+  10: $spacer * 2.5,
+  // 40px
+  12: $spacer * 3,
+  // 48px
+  12\.5: $spacer * 3.125,
+  // 50px
+  13: $spacer * 3.25,
+  // 52px
+  15: $spacer * 3.75,
+  // 60px
+  18: $spacer * 4.5,
+  // 72px
+  20: $spacer * 5,
+  // 80px
+  25: $spacer * 6.25,
+  // 100px
+  30: $spacer * 7.5,
+  // 120px
+  33: $spacer * 8.25,
+  // 132px
+  40: $spacer * 10,
+  // 160px
+  50: $spacer * 12.5,
+  // 200px
+  312px: 312px,
+) !default;
+
+// ============ border-radius ============
+
+$rounded-values: (
+  null: 0.375rem,
+  0: 0,
+  4: 16px,
+  circle: 50%,
+  pill: 50rem,
+  12px: 12px,
+  20px: 20px,
+  24px: 24px,
+  48px: 48px,
+  80px: 80px,
+  100px: 100px,
+) !default;

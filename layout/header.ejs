@@ -1,0 +1,394 @@
+<header class="header bg-white bg-md-transparent pt-md-10 mb-md-4">
+  <div class="container">
+    <div class="rounded-md-100px bg-white  shadow-md-c1 d-flex align-items-center py-3 py-md-4 px-md-10">
+      <h1 class="me-6">
+        <a href="./index.html">
+          <img class="header__logo"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/logo.png?raw=true"
+            alt="header logo">
+        </a>
+      </h1>
+      <div class="dropdown d-none d-xl-block">
+        <button class=" d-flex align-items-center gap-1 px-6 dropdown-toggle" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar-menu" aria-expanded="false">
+          探索
+        </button>
+      </div>
+      <div
+        class="d-none d-xl-flex align-items-center gap-10 border border-neutral-40 rounded-4 p-2  header__search-container">
+        <div class="d-flex align-items-center gap-2">
+          <span class="material-symbols-outlined fs-h5">
+            search
+          </span>
+          <input class="form-control header__search-bar" type="text" name="" id="" placeholder="搜尋各種音樂、數學、程式及設計課程">
+        </div>
+        <button type="button" class="btn btn-primary-100 px-4 py-3 text-white">搜尋</button>
+      </div>
+      <div class="flex-fill d-flex justify-content-end align-items-center gap-4">
+        <a href="javascript:;" class="px-3 py-2">
+          <div class="position-relative ">
+            <span class="material-symbols-outlined text-neutral-80">
+              notifications
+            </span>
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-1 bg-primary-100 border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </div>
+        </a>
+        <a href="javascript:;" class="px-3 py-2">
+          <div class=" position-relative ">
+            <span class="material-symbols-outlined text-neutral-80">
+              shopping_cart
+            </span>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-100 text-white d-flex justify-content-center align-items-center fs-xs"
+              style="width: 16px; height: 16px;">
+              2
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </div>
+        </a>
+        <button type="button" class="btn btn-primary-100 py-4 px-8 d-none d-xl-block">登入 / 註冊</button>
+        <button type="button" class="d-block d-xl-none">
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="navbar-menu" class=" dropdown-menu header__dropdown-menu py-0 overflow-hidden">
+    <div class="d-flex rounded-12px h-100">
+      <div class="p-3 nav-container bg-neutral-40 border-end border-neutral-40">
+        <a href="#" class="d-inline-block ps-6 pe-4 py-3 text-neutral-80 mb-2 w-100">探索全部</a>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              音樂
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+
+              <span>攝影</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span>程式</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <% for(let i=0; i < 2; i++){%>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>程式</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>藝術</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>人文</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>行銷</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>投資理財</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>心靈成長</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>職場技能</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>生活品味</span>
+                <span class="material-symbols-outlined fs-h5">
+                  chevron_right
+                </span>
+              </a>
+            </li>
+            <% }%>
+        </ul>
+      </div>
+      <div class="p-3 nav-container bg-white border-end border-neutral-40">
+        <a href="#" class="d-inline-block ps-6 pe-4 py-3 text-neutral-80 mb-2 w-100">所有程式</a>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              程式入門
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span>網頁前端</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>網頁後端</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>網站架設</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>資訊安全</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>程式語言</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>遊戲開發</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>資料科學</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>人工智慧</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span>量化分析</span>
+              <span class="material-symbols-outlined fs-h5">
+                chevron_right
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="px-6 pt-3">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12.5118 23.4581C4.6022 23.4581 2.48889 15.2129 3.44416 9.81057C3.48574 9.57545 3.79394 9.50771 3.92823 9.70515C4.34411 10.3164 4.71419 11.1993 5.32736 11.1227C6.24897 11.0074 6.88745 2.87518 12.3496 0.58698C12.5229 0.51437 12.7043 0.652136 12.6852 0.839073C12.4151 3.48906 14.0062 7.28289 16.825 7.28289C18.4409 7.28289 19.5465 5.99326 20.099 4.6981C20.2668 4.30468 20.8416 4.35428 20.9379 4.77104C21.9237 9.04051 24.559 23.4581 12.5118 23.4581Z"
+              fill="#FF3A55" />
+            <path
+              d="M9.73868 15.5075C9.92468 15.3512 10.2071 15.4584 10.2493 15.6977C10.3481 16.2575 10.673 17.2196 11.7389 17.2196C13.021 17.2196 13.8911 13.6916 14.1193 12.654C14.1568 12.4833 14.3232 12.3674 14.4945 12.4022C17.6986 13.0537 19.2565 23.4581 12.2115 23.4581C7.08284 23.4581 8.24473 16.7625 9.73868 15.5075ZM18.494 4.23999C18.607 3.35677 16.9947 5.77247 16.9947 5.77247C16.9947 5.77247 18.2239 6.35306 18.494 4.23999ZM2.24839 17.412C2.28237 17.036 1.79867 16.0293 1.71303 16.4279C1.50804 17.3815 2.2144 17.788 2.24839 17.412Z"
+              fill="#FFBBB0" />
+            <path
+              d="M15.149 16.3404C15.0289 15.8393 14.598 17.0032 14.6521 17.4773C14.7063 17.9514 15.4364 17.5393 15.149 16.3404Z"
+              fill="#FFE0D7" />
+          </svg>
+          <p class="fw-semibold text-neutral-80">熱門網頁前端課程</p>
+        </div>
+        <div class="pt-4 border-top border-neutral-40 d-flex flex-column gap-4">
+          <div class="card position-relative">
+            <div class="d-flex align-items-start gap-2 bg-white pb-6 border-bottom border-neutral-40">
+              <img class="img-fluid rounded-12px object-fit-cover" style="width: 100px; aspect-ratio: 1 / 1;"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+                class="card-img-top" alt="course-5">
+              <div class="card-body flex-fill">
+                <div class="pb-2">
+                  <a href="#" class="stretched-link text-black">
+                    <h5 class="fs-base card-title mb-4">小白也會！從零開始學習 Python 程式設計</h5>
+                  </a>
+                  <div class="d-flex align-items-center justify-content-between gap-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                        alt="avatar-1">
+                      <p class="text-neutral-80">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fw-bold text-primary-100 fs-base ">NT$ 2,480</p>
+                      <p class="text-gray-1 text-decoration-line-through fs-sm">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-2 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                  <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                  <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                        fill="#F6BD2B" />
+                    </svg>
+                    <p class="text-gray-2">4.0</p>
+                    <p class="text-gray-1">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="position-absolute top-1 start-1 px-2 py-1 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+              8折
+            </div>
+          </div>
+          <div class="card position-relative">
+            <div class="d-flex align-items-start gap-2 bg-white pb-6 border-bottom border-neutral-40">
+              <img class="img-fluid rounded-12px object-fit-cover" style="width: 100px; aspect-ratio: 1 / 1;"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+                class="card-img-top" alt="course-5">
+              <div class="card-body flex-fill">
+                <div class="pb-2">
+                  <a href="#" class="stretched-link text-black">
+                    <h5 class="fs-base card-title mb-4">小白也會！從零開始學習 Python 程式設計</h5>
+                  </a>
+                  <div class="d-flex align-items-center justify-content-between gap-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                        alt="avatar-1">
+                      <p class="text-neutral-80">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fw-bold text-neutral-60 fs-base ">已購買</p>
+                      <p class="text-gray-1 text-decoration-line-through fs-sm">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-2 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                  <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                  <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                        fill="#F6BD2B" />
+                    </svg>
+                    <p class="text-gray-2">4.0</p>
+                    <p class="text-gray-1">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="position-absolute top-1 start-1 px-2 py-1 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+              8折
+            </div>
+          </div>
+          <div class="card position-relative">
+            <div class="d-flex align-items-start gap-2 bg-white pb-6 border-bottom border-neutral-40">
+              <img class="img-fluid rounded-12px object-fit-cover" style="width: 100px; aspect-ratio: 1 / 1;"
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+                class="card-img-top" alt="course-5">
+              <div class="card-body flex-fill">
+                <div class="pb-2">
+                  <a href="#" class="stretched-link text-black">
+                    <h5 class="fs-base card-title mb-4">小白也會！從零開始學習 Python 程式設計</h5>
+                  </a>
+                  <div class="d-flex align-items-center justify-content-between gap-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <img style="width: 32px; height: 32px;" class="object-fit-cover"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                        alt="avatar-1">
+                      <p class="text-neutral-80">Kelly Hsu</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-end">
+                      <p class="fw-bold text-primary-100 fs-base ">NT$ 2,480</p>
+                      <p class="text-gray-1 text-decoration-line-through fs-sm">NT$ 3,200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-2 d-flex align-items-center justify-content-between border-top border-neutral-40">
+                  <p class="text-neutral-80 fs-sm ">已有 420 位同學加入</p>
+                  <div class="d-flex align-items-center gap-1 fs-sm fw-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.99992 9.03605L2.73742 10.7176C2.71272 10.7303 2.68497 10.7359 2.65727 10.7338C2.62957 10.7317 2.60301 10.7219 2.58053 10.7056C2.55806 10.6892 2.54056 10.667 2.52999 10.6413C2.51942 10.6156 2.51619 10.5875 2.52067 10.5601L3.11316 6.93755L0.504665 4.35605C0.484537 4.33673 0.470256 4.31214 0.463459 4.28508C0.456663 4.25803 0.457624 4.22961 0.466234 4.20307C0.474844 4.17654 0.490755 4.15296 0.512143 4.13505C0.53353 4.11714 0.559531 4.10562 0.587165 4.1018L4.21491 3.54455L5.86491 0.26705C5.87736 0.242089 5.89651 0.221091 5.92022 0.206413C5.94394 0.191735 5.97128 0.18396 5.99917 0.18396C6.02705 0.18396 6.05439 0.191735 6.07811 0.206413C6.10182 0.221091 6.12098 0.242089 6.13342 0.26705L7.78341 3.54455L11.4112 4.1018C11.4386 4.10588 11.4644 4.11755 11.4856 4.1355C11.5068 4.15344 11.5226 4.17694 11.5312 4.20336C11.5398 4.22979 11.5408 4.25807 11.5342 4.28505C11.5275 4.31202 11.5135 4.33661 11.4937 4.35605L8.88741 6.9383L9.47841 10.5608C9.48273 10.5882 9.47938 10.6162 9.46874 10.6418C9.4581 10.6673 9.44059 10.6895 9.41814 10.7057C9.3957 10.7219 9.3692 10.7316 9.34158 10.7337C9.31396 10.7358 9.2863 10.7302 9.26166 10.7176L5.99992 9.03605Z"
+                        fill="#F6BD2B" />
+                    </svg>
+                    <p class="text-gray-2">4.0</p>
+                    <p class="text-gray-1">(333)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="position-absolute top-1 start-1 px-2 py-1 rounded-100px bg-alert-10 text-alert-100 fs-sm fw-semibold">
+              8折
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>

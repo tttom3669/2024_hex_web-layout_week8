@@ -1,0 +1,144 @@
+.lesson {
+  &__link-container {
+    width: 100%;
+    overflow: auto; /* 允許內容滑動 */
+    scrollbar-width: none; /* Firefox 隱藏卷軸 */
+
+    &:-webkit-scrollbar {
+      display: none; /* Chrome、Safari 隱藏卷軸 */
+    }
+  }
+  &__link-bg--1,
+  &__link-bg--2 {
+    position: absolute;
+    z-index: 0;
+  }
+  &__link-bg--1 {
+    top: 0;
+    left: 4px;
+    @include media-breakpoint-up(md) {
+      left: -102px;
+    }
+  }
+  &__link-bg--2 {
+    bottom: calc(100% - 20px);
+    right: 48px;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}
+
+.swiper-hot-course-container {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: calc(50% - 40px);
+  }
+}
+
+.course-nav {
+  .nav-link {
+    display: inline-block;
+    font-weight: 400;
+    color: $neutral-80;
+    padding: 16px 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: $primary-100;
+      opacity: 0;
+    }
+    &.active {
+      color: $primary-100;
+      font-weight: 600;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.swiper-popular-theme {
+  &__btn-prev,
+  &__btn-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    padding: 8px;
+    transform: translate(0);
+    margin: 0;
+    width: initial;
+    height: initial;
+    &::after {
+      font-size: 24px;
+      font-family: 'Material Symbols Outlined';
+    }
+    &.swiper-button-disabled {
+      color: $neutral-60;
+    }
+  }
+  &__btn-prev {
+    &::after {
+      content: '\e5c4';
+    }
+  }
+  &__btn-next {
+    &::after {
+      content: '\e5c8';
+    }
+  }
+}
+
+.related-nav {
+  .nav-link {
+    display: inline-block;
+    padding: 4px 16px;
+    font-weight: 400;
+    color: $neutral-80;
+    &.active {
+      color: $primary-100;
+      font-weight: 600;
+    }
+  }
+  .nav-item {
+    &:not(:last-child) {
+      border-right: 1px solid $neutral-40;
+    }
+  }
+}
+
+.pagination {
+  .page-link {
+    aspect-ratio: 1/1;
+    width: 32px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $neutral-80;
+    @include media-breakpoint-up(md) {
+      width: 48px;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      background-color: $neutral-40;
+      color: $neutral-60;
+    }
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: $primary-100;
+      color: $white;
+    }
+  }
+}
